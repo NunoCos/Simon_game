@@ -1,33 +1,106 @@
 body {
+    background-color: cornflowerblue;
+}
+
+.container {
+    margin: 0 auto;
     text-align: center;
 }
 
 .board {
-    margin-top: 100px;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 600px;
+    height: 600px;
+    border: solid 5px black;
+    border-radius: 600px;
+    z-index: 8;
 }
 
 .panel {
-    width: 200px;
-    height: 200px;
-    display: inline-block;
-}
-
-.bottom-right-panel {
-    border-bottom-right-radius: 100%;
-    background-color: red;
-}
-
-.bottom-left-panel {
-    border-bottom-left-radius: 100%;
-    background-color: greenyellow;
-}
-
-.top-right-panel {
-    border-top-right-radius: 100%;
-    background-color: yellow;
+    margin: 0;
+    float: left;
+    position: relative;
+    width: 295px;
+    height: 295px;
+    border: solid 5px black;
 }
 
 .top-left-panel {
-    border-top-left-radius: 100%;
+    background-color: green;
+    border-radius: 300px 0 0 0;
+}
+
+.top-right-panel {
+    background-color: red;
+    border-radius: 0 300px 0 0;
+}
+
+.bottom-left-panel {
+    background-color:yellow;
+    border-radius: 0 0 0 300px;
+}
+
+.bottom-right-panel {
     background-color: blue;
+    border-radius: 0 0 300px 0;
+}
+
+.display {
+    width: 245px;
+    height: 245px;
+    margin-left: 165px;
+    margin-top: 165px;
+    background-color: grey;
+    border: solid 10px black;
+    border-radius: 150px;
+    position: absolute;
+    z-index: 10;
+}
+
+.title {
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+.inline {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.counter {
+    width: 60px;
+    height: 60px;
+    border: solid 1px black;
+    border-radius: 10px;
+    color: white;
+    font-size: 40px;
+    background-color: black;
+}
+
+.start-btn {
+    margin: 0px;
+    margin-left: 20px;
+    text-align: center;
+    width: 55px;
+    height: 55px;
+    border: solid 2px black;
+    border-radius: 30px;
+    background-color: green;
+    color: white;
+    font-size: 15px;
+    line-height: 50px;
+}
+
+.outer-switch {
+    width: 60px;
+    height: 31px;
+    border: solid 1px black;
+    background-color: white;
+}
+
+.inner-switch{
+    width: 30px;
+    height: 30px;
+    background-color: black;
 }
