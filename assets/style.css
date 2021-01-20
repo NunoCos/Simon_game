@@ -1,106 +1,303 @@
 body {
-    background-color: cornflowerblue;
+    background-color: sandybrown;
 }
 
-.container {
-    margin: 0 auto;
-    text-align: center;
-}
-
-.board {
-    margin: 0 auto;
-    margin-top: 50px;
-    width: 600px;
-    height: 600px;
-    border: solid 5px black;
-    border-radius: 600px;
-    z-index: 8;
-}
-
-.panel {
-    margin: 0;
-    float: left;
+.circle {
+    margin: 33px;
+    border: 10px solid #333;
+    background-color: #333;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    padding: 30px;
+    overflow: hidden;
     position: relative;
-    width: 295px;
-    height: 295px;
-    border: solid 5px black;
 }
+
+
+#display {
+    margin: 84px;
+    margin-left: 110px;
+    background-color: white;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    padding: 30px;
+    overflow: hidden;
+    position: relative;
+    border: solid 10px black;
+}
+
+
+#title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 42px;
+}
+
+#scoreBox {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    height: 40px;
+    width: 65px;
+    border: solid 3px black;
+    border-radius: 10px;
+    color: red;
+    background-color: rgb(67, 7, 16);
+    margin-top: 21px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 
 .top-left-panel {
-    background-color: green;
-    border-radius: 300px 0 0 0;
+    position: absolute;
+    background-color: red;
+    width: 50%;
+    height: 45%;
+    left: 55%;
+    right: 0%;
+    bottom: 50%;
+    top: 0%;
 }
 
 .top-right-panel {
-    background-color: red;
-    border-radius: 0 300px 0 0;
+    position: absolute;
+    background-color: green;
+    width: 45%;
+    height: 45%;
+    left: 0%;
+    right: 45%;
+    bottom: 50%;
+    top: 0%
 }
 
 .bottom-left-panel {
-    background-color:yellow;
-    border-radius: 0 0 0 300px;
+    position: absolute;
+    background-color: yellow;
+    width: 45%;
+    height: 50%;
+    left: 0;
+    right: 50%;
+    bottom: 0%;
+    top: 55%;
 }
 
 .bottom-right-panel {
-    background-color: blue;
-    border-radius: 0 0 300px 0;
+  position: absolute;
+  background-color: blue;
+  width: 50%;
+  height: 50%;
+  left: 55%;
+  right: 0%;
+  bottom: 0%;
+  top: 55%;
 }
 
-.display {
-    width: 245px;
-    height: 245px;
-    margin-left: 165px;
-    margin-top: 165px;
-    background-color: grey;
-    border: solid 10px black;
-    border-radius: 150px;
-    position: absolute;
-    z-index: 10;
+.active {
+ 
+  padding-top: 10px;
+  margin-left: 10px;
+  padding-left: 7px;
+  padding-right: 2px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #333333;
+  background-color: red;
+ 
+}
+ 
+.top-left-panelactive {
+ 
+  position: absolute;
+  background-color: DarkRed;
+  width: 50%;
+  height: 45%;
+  left: 55%;
+  right: 0%;
+  bottom: 50%;
+  top: 0%;
+ 
+}
+ 
+.top-right-panelactive {
+ 
+  position: absolute;
+  background-color: DarkGreen;
+  width: 45%;
+  height: 45%;
+  left: 0%;
+  right: 45%;
+  bottom: 50%;
+  top: 0%;
+ 
+}
+ 
+.bottom-left-panelactive {
+ 
+  position: absolute;
+  background-color: #CCCC00;
+  width: 45%;
+  height: 50%;
+  left: 0;
+  right: 50%;
+  bottom: 0%;
+  top: 55%;
+ 
+}
+ 
+.bottom-right-panelactive {
+ 
+  position: absolute;
+  background-color: DarkBlue;
+  width: 50%;
+  height: 50%;
+  left: 55%;
+  right: 0%;
+  bottom: 0%;
+  top: 55%;
+ 
 }
 
-.title {
-    margin-top: 30px;
-    font-size: 40px;
-}
 
-.inline {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.counter {
-    width: 60px;
-    height: 60px;
-    border: solid 1px black;
-    border-radius: 10px;
-    color: white;
-    font-size: 40px;
-    background-color: black;
+#controls {
+    margin-top: 0%;
+    padding-top: 0%;
+    border-top: 0px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
 }
 
 .start-btn {
-    margin: 0px;
-    margin-left: 20px;
-    text-align: center;
-    width: 55px;
-    height: 55px;
-    border: solid 2px black;
-    border-radius: 30px;
-    background-color: green;
-    color: white;
-    font-size: 15px;
-    line-height: 50px;
-}
-
-.outer-switch {
-    width: 60px;
-    height: 31px;
-    border: solid 1px black;
-    background-color: white;
-}
-
-.inner-switch{
-    width: 30px;
+    padding-left: 5px;
     height: 30px;
+    width: 30px;
+    border: solid 5px black;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-top: 26px;
+}
+
+#strictBtn {
+ 
+  padding-left: 5px;
+  height: 30px;
+  width: 30px;
+  min-height: 20px;
+  border: 5px solid #333333;
+  background-color: yellow;
+  border-radius: 50%;
+  display: block;
+  margin-top: 1px;
+ 
+}
+
+
+#twoThinghs {
+    margin-top: 5px;
+    width: 40px;
+    height: 65px;
+}
+
+
+#light {
+    height: 20px;
+    width: 50px;
+}
+
+.onLight {
+    padding-top: 10px;
+    margin-left: 10px;
+    padding-left: 7px;
+    padding-right: 2px;
+    height: 10px;
+    border-radius: 50%;
+    border: solid 2px black;
     background-color: black;
+}
+
+#counter {
+    height: 75px;
+}
+
+#onSwitch {
+ 
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: black;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 3px;
+ 
+}
+
+#onOffSwitch {
+ 
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  background-color: LightBlue;
+  margin-left: 0px;
+  padding-left: 0px;
+  border-left: 0px;
+  float: left;
+  border-radius: 2px;
+ 
+}
+
+#onOff {
+ 
+  height: 45px;
+  font-weight: bold;
+  font-family: 'Open Sans Condensed', sans-serif;
+ 
+}
+
+#onText {
+ 
+  padding-right: 0px;
+  margin-left: 10px;
+  padding-top: 10px;
+  width: 30%;
+ 
+}
+ 
+#offText {
+ 
+  padding-left: 8px;
+  border: 0px;
+  padding-top: 10px;
+  width: 30%;
+ 
+}
+
+
+#controls {
+    margin-top: 0%;
+    padding-top: 0%;
+    border-top: 0px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+}
+
+#label1 {
+ 
+  margin-top: 0%;
+  padding-top: 0%;
+  border-top: 0px;
+  margin-left: 20px;
+  color: black;
+ 
+}
+ 
+#labels2 {
+ 
+  margin-top: 0%;
+  margin-left: 30px;
+  color: black;
+ 
 }
